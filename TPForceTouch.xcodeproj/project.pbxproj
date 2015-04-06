@@ -11,7 +11,6 @@
 		2113AFD51AC793D400C2349C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2113AFD41AC793D400C2349C /* Images.xcassets */; };
 		2113AFD81AC793D400C2349C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2113AFD61AC793D400C2349C /* MainMenu.xib */; };
 		2113AFE41AC793D400C2349C /* TPForceTouchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2113AFE31AC793D400C2349C /* TPForceTouchTests.swift */; };
-		2113AFEE1AC7A17B00C2349C /* MainWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2113AFED1AC7A17B00C2349C /* MainWindow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +32,6 @@
 		2113AFDD1AC793D400C2349C /* TPForceTouchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TPForceTouchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2113AFE21AC793D400C2349C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2113AFE31AC793D400C2349C /* TPForceTouchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TPForceTouchTests.swift; sourceTree = "<group>"; };
-		2113AFED1AC7A17B00C2349C /* MainWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +77,6 @@
 				2113AFD41AC793D400C2349C /* Images.xcassets */,
 				2113AFD61AC793D400C2349C /* MainMenu.xib */,
 				2113AFD01AC793D400C2349C /* Supporting Files */,
-				2113AFED1AC7A17B00C2349C /* MainWindow.swift */,
 			);
 			path = TPForceTouch;
 			sourceTree = "<group>";
@@ -208,7 +205,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2113AFEE1AC7A17B00C2349C /* MainWindow.swift in Sources */,
 				2113AFD31AC793D400C2349C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,6 +396,7 @@
 				2113AFE91AC793D400C2349C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2113AFEA1AC793D400C2349C /* Build configuration list for PBXNativeTarget "TPForceTouchTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +405,7 @@
 				2113AFEC1AC793D400C2349C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
