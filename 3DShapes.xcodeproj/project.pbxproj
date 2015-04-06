@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2113AFD31AC793D400C2349C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2113AFD21AC793D400C2349C /* AppDelegate.swift */; };
-		2113AFD51AC793D400C2349C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2113AFD41AC793D400C2349C /* Images.xcassets */; };
-		2113AFD81AC793D400C2349C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2113AFD61AC793D400C2349C /* MainMenu.xib */; };
 		2113AFE41AC793D400C2349C /* TPForceTouchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2113AFE31AC793D400C2349C /* TPForceTouchTests.swift */; };
+		21D3917E1AD236A30091B16E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2113AFD61AC793D400C2349C /* MainMenu.xib */; };
+		21D3917F1AD236AE0091B16E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2113AFD41AC793D400C2349C /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +55,7 @@
 		2113AFC41AC793D400C2349C = {
 			isa = PBXGroup;
 			children = (
-				2113AFCF1AC793D400C2349C /* TPForceTouch */,
+				2113AFCF1AC793D400C2349C /* 3DShapes */,
 				2113AFE01AC793D400C2349C /* TPForceTouchTests */,
 				2113AFCE1AC793D400C2349C /* Products */,
 			);
@@ -70,7 +70,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2113AFCF1AC793D400C2349C /* TPForceTouch */ = {
+		2113AFCF1AC793D400C2349C /* 3DShapes */ = {
 			isa = PBXGroup;
 			children = (
 				2113AFD21AC793D400C2349C /* AppDelegate.swift */,
@@ -78,7 +78,7 @@
 				2113AFD61AC793D400C2349C /* MainMenu.xib */,
 				2113AFD01AC793D400C2349C /* Supporting Files */,
 			);
-			path = TPForceTouch;
+			path = 3DShapes;
 			sourceTree = "<group>";
 		};
 		2113AFD01AC793D400C2349C /* Supporting Files */ = {
@@ -186,8 +186,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2113AFD51AC793D400C2349C /* Images.xcassets in Resources */,
-				2113AFD81AC793D400C2349C /* MainMenu.xib in Resources */,
+				21D3917E1AD236A30091B16E /* MainMenu.xib in Resources */,
+				21D3917F1AD236AE0091B16E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,7 +324,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = TPForceTouch/Info.plist;
+				INFOPLIST_FILE = 3DShapes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = 3DShapes;
 			};
@@ -335,7 +335,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = TPForceTouch/Info.plist;
+				INFOPLIST_FILE = 3DShapes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = 3DShapes;
 			};
