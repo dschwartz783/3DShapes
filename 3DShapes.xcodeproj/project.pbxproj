@@ -24,12 +24,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2113AFCD1AC793D400C2349C /* TPForceTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TPForceTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2113AFCD1AC793D400C2349C /* 3DShapes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 3DShapes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2113AFD11AC793D400C2349C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2113AFD21AC793D400C2349C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2113AFD41AC793D400C2349C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2113AFD71AC793D400C2349C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		2113AFDD1AC793D400C2349C /* TPForceTouchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TPForceTouchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2113AFDD1AC793D400C2349C /* 3DShapesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 3DShapesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2113AFE21AC793D400C2349C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2113AFE31AC793D400C2349C /* TPForceTouchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TPForceTouchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,8 +64,8 @@
 		2113AFCE1AC793D400C2349C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2113AFCD1AC793D400C2349C /* TPForceTouch.app */,
-				2113AFDD1AC793D400C2349C /* TPForceTouchTests.xctest */,
+				2113AFCD1AC793D400C2349C /* 3DShapes.app */,
+				2113AFDD1AC793D400C2349C /* 3DShapesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,9 +109,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2113AFCC1AC793D400C2349C /* TPForceTouch */ = {
+		2113AFCC1AC793D400C2349C /* 3DShapes */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2113AFE71AC793D400C2349C /* Build configuration list for PBXNativeTarget "TPForceTouch" */;
+			buildConfigurationList = 2113AFE71AC793D400C2349C /* Build configuration list for PBXNativeTarget "3DShapes" */;
 			buildPhases = (
 				2113AFC91AC793D400C2349C /* Sources */,
 				2113AFCA1AC793D400C2349C /* Frameworks */,
@@ -121,14 +121,14 @@
 			);
 			dependencies = (
 			);
-			name = TPForceTouch;
+			name = 3DShapes;
 			productName = TPForceTouch;
-			productReference = 2113AFCD1AC793D400C2349C /* TPForceTouch.app */;
+			productReference = 2113AFCD1AC793D400C2349C /* 3DShapes.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2113AFDC1AC793D400C2349C /* TPForceTouchTests */ = {
+		2113AFDC1AC793D400C2349C /* 3DShapesTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2113AFEA1AC793D400C2349C /* Build configuration list for PBXNativeTarget "TPForceTouchTests" */;
+			buildConfigurationList = 2113AFEA1AC793D400C2349C /* Build configuration list for PBXNativeTarget "3DShapesTests" */;
 			buildPhases = (
 				2113AFD91AC793D400C2349C /* Sources */,
 				2113AFDA1AC793D400C2349C /* Frameworks */,
@@ -139,9 +139,9 @@
 			dependencies = (
 				2113AFDF1AC793D400C2349C /* PBXTargetDependency */,
 			);
-			name = TPForceTouchTests;
+			name = 3DShapesTests;
 			productName = TPForceTouchTests;
-			productReference = 2113AFDD1AC793D400C2349C /* TPForceTouchTests.xctest */;
+			productReference = 2113AFDD1AC793D400C2349C /* 3DShapesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -162,7 +162,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2113AFC81AC793D400C2349C /* Build configuration list for PBXProject "TPForceTouch" */;
+			buildConfigurationList = 2113AFC81AC793D400C2349C /* Build configuration list for PBXProject "3DShapes" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -175,8 +175,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2113AFCC1AC793D400C2349C /* TPForceTouch */,
-				2113AFDC1AC793D400C2349C /* TPForceTouchTests */,
+				2113AFCC1AC793D400C2349C /* 3DShapes */,
+				2113AFDC1AC793D400C2349C /* 3DShapesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -222,7 +222,7 @@
 /* Begin PBXTargetDependency section */
 		2113AFDF1AC793D400C2349C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2113AFCC1AC793D400C2349C /* TPForceTouch */;
+			target = 2113AFCC1AC793D400C2349C /* 3DShapes */;
 			targetProxy = 2113AFDE1AC793D400C2349C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -326,7 +326,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = TPForceTouch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = 3DShapes;
 			};
 			name = Debug;
 		};
@@ -337,7 +337,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = TPForceTouch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = 3DShapes;
 			};
 			name = Release;
 		};
@@ -356,7 +356,7 @@
 				);
 				INFOPLIST_FILE = TPForceTouchTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = 3DShapesTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TPForceTouch.app/Contents/MacOS/TPForceTouch";
 			};
 			name = Debug;
@@ -372,7 +372,7 @@
 				);
 				INFOPLIST_FILE = TPForceTouchTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = 3DShapesTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TPForceTouch.app/Contents/MacOS/TPForceTouch";
 			};
 			name = Release;
@@ -380,7 +380,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2113AFC81AC793D400C2349C /* Build configuration list for PBXProject "TPForceTouch" */ = {
+		2113AFC81AC793D400C2349C /* Build configuration list for PBXProject "3DShapes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2113AFE51AC793D400C2349C /* Debug */,
@@ -389,7 +389,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2113AFE71AC793D400C2349C /* Build configuration list for PBXNativeTarget "TPForceTouch" */ = {
+		2113AFE71AC793D400C2349C /* Build configuration list for PBXNativeTarget "3DShapes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2113AFE81AC793D400C2349C /* Debug */,
@@ -398,7 +398,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2113AFEA1AC793D400C2349C /* Build configuration list for PBXNativeTarget "TPForceTouchTests" */ = {
+		2113AFEA1AC793D400C2349C /* Build configuration list for PBXNativeTarget "3DShapesTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2113AFEB1AC793D400C2349C /* Debug */,

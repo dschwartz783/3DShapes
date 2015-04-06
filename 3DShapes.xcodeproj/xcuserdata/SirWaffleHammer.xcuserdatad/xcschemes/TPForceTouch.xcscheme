@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2113AFCC1AC793D400C2349C"
-               BuildableName = "TPForceTouch.app"
-               BlueprintName = "TPForceTouch"
-               ReferencedContainer = "container:TPForceTouch.xcodeproj">
+               BuildableName = "3DShapes.app"
+               BlueprintName = "3DShapes"
+               ReferencedContainer = "container:3DShapes.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2113AFDC1AC793D400C2349C"
-               BuildableName = "TPForceTouchTests.xctest"
-               BlueprintName = "TPForceTouchTests"
-               ReferencedContainer = "container:TPForceTouch.xcodeproj">
+               BuildableName = "3DShapesTests.xctest"
+               BlueprintName = "3DShapesTests"
+               ReferencedContainer = "container:3DShapes.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2113AFDC1AC793D400C2349C"
-               BuildableName = "TPForceTouchTests.xctest"
-               BlueprintName = "TPForceTouchTests"
-               ReferencedContainer = "container:TPForceTouch.xcodeproj">
+               BuildableName = "3DShapesTests.xctest"
+               BlueprintName = "3DShapesTests"
+               ReferencedContainer = "container:3DShapes.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2113AFCC1AC793D400C2349C"
-            BuildableName = "TPForceTouch.app"
-            BlueprintName = "TPForceTouch"
-            ReferencedContainer = "container:TPForceTouch.xcodeproj">
+            BuildableName = "3DShapes.app"
+            BlueprintName = "3DShapes"
+            ReferencedContainer = "container:3DShapes.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -77,9 +77,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2113AFCC1AC793D400C2349C"
-            BuildableName = "TPForceTouch.app"
-            BlueprintName = "TPForceTouch"
-            ReferencedContainer = "container:TPForceTouch.xcodeproj">
+            BuildableName = "3DShapes.app"
+            BlueprintName = "3DShapes"
+            ReferencedContainer = "container:3DShapes.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -96,9 +96,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2113AFCC1AC793D400C2349C"
-            BuildableName = "TPForceTouch.app"
-            BlueprintName = "TPForceTouch"
-            ReferencedContainer = "container:TPForceTouch.xcodeproj">
+            BuildableName = "3DShapes.app"
+            BlueprintName = "3DShapes"
+            ReferencedContainer = "container:3DShapes.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
