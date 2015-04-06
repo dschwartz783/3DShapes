@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2113AFD31AC793D400C2349C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2113AFD21AC793D400C2349C /* AppDelegate.swift */; };
+		2113AFD51AC793D400C2349C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2113AFD41AC793D400C2349C /* Images.xcassets */; };
+		2113AFD81AC793D400C2349C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2113AFD61AC793D400C2349C /* MainMenu.xib */; };
+		2113AFE41AC793D400C2349C /* TPForceTouchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2113AFE31AC793D400C2349C /* TPForceTouchTests.swift */; };
+		2113AFEE1AC7A17B00C2349C /* MainWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2113AFED1AC7A17B00C2349C /* MainWindow.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2113AFDE1AC793D400C2349C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2113AFC51AC793D400C2349C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2113AFCC1AC793D400C2349C;
+			remoteInfo = TPForceTouch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2113AFCD1AC793D400C2349C /* TPForceTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TPForceTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2113AFD11AC793D400C2349C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2113AFD21AC793D400C2349C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2113AFD41AC793D400C2349C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2113AFD71AC793D400C2349C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		2113AFDD1AC793D400C2349C /* TPForceTouchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TPForceTouchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2113AFE21AC793D400C2349C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2113AFE31AC793D400C2349C /* TPForceTouchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TPForceTouchTests.swift; sourceTree = "<group>"; };
+		2113AFED1AC7A17B00C2349C /* MainWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindow.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2113AFCA1AC793D400C2349C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2113AFDA1AC793D400C2349C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2113AFC41AC793D400C2349C = {
+			isa = PBXGroup;
+			children = (
+				2113AFCF1AC793D400C2349C /* TPForceTouch */,
+				2113AFE01AC793D400C2349C /* TPForceTouchTests */,
+				2113AFCE1AC793D400C2349C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2113AFCE1AC793D400C2349C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2113AFCD1AC793D400C2349C /* TPForceTouch.app */,
+				2113AFDD1AC793D400C2349C /* TPForceTouchTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2113AFCF1AC793D400C2349C /* TPForceTouch */ = {
+			isa = PBXGroup;
+			children = (
+				2113AFD21AC793D400C2349C /* AppDelegate.swift */,
+				2113AFD41AC793D400C2349C /* Images.xcassets */,
+				2113AFD61AC793D400C2349C /* MainMenu.xib */,
+				2113AFD01AC793D400C2349C /* Supporting Files */,
+				2113AFED1AC7A17B00C2349C /* MainWindow.swift */,
+			);
+			path = TPForceTouch;
+			sourceTree = "<group>";
+		};
+		2113AFD01AC793D400C2349C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2113AFD11AC793D400C2349C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2113AFE01AC793D400C2349C /* TPForceTouchTests */ = {
+			isa = PBXGroup;
+			children = (
+				2113AFE31AC793D400C2349C /* TPForceTouchTests.swift */,
+				2113AFE11AC793D400C2349C /* Supporting Files */,
+			);
+			path = TPForceTouchTests;
+			sourceTree = "<group>";
+		};
+		2113AFE11AC793D400C2349C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2113AFE21AC793D400C2349C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2113AFCC1AC793D400C2349C /* TPForceTouch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2113AFE71AC793D400C2349C /* Build configuration list for PBXNativeTarget "TPForceTouch" */;
+			buildPhases = (
+				2113AFC91AC793D400C2349C /* Sources */,
+				2113AFCA1AC793D400C2349C /* Frameworks */,
+				2113AFCB1AC793D400C2349C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TPForceTouch;
+			productName = TPForceTouch;
+			productReference = 2113AFCD1AC793D400C2349C /* TPForceTouch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2113AFDC1AC793D400C2349C /* TPForceTouchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2113AFEA1AC793D400C2349C /* Build configuration list for PBXNativeTarget "TPForceTouchTests" */;
+			buildPhases = (
+				2113AFD91AC793D400C2349C /* Sources */,
+				2113AFDA1AC793D400C2349C /* Frameworks */,
+				2113AFDB1AC793D400C2349C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2113AFDF1AC793D400C2349C /* PBXTargetDependency */,
+			);
+			name = TPForceTouchTests;
+			productName = TPForceTouchTests;
+			productReference = 2113AFDD1AC793D400C2349C /* TPForceTouchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2113AFC51AC793D400C2349C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = MainWaffle;
+				TargetAttributes = {
+					2113AFCC1AC793D400C2349C = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					2113AFDC1AC793D400C2349C = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 2113AFCC1AC793D400C2349C;
+					};
+				};
+			};
+			buildConfigurationList = 2113AFC81AC793D400C2349C /* Build configuration list for PBXProject "TPForceTouch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2113AFC41AC793D400C2349C;
+			productRefGroup = 2113AFCE1AC793D400C2349C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2113AFCC1AC793D400C2349C /* TPForceTouch */,
+				2113AFDC1AC793D400C2349C /* TPForceTouchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2113AFCB1AC793D400C2349C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2113AFD51AC793D400C2349C /* Images.xcassets in Resources */,
+				2113AFD81AC793D400C2349C /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2113AFDB1AC793D400C2349C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2113AFC91AC793D400C2349C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2113AFEE1AC7A17B00C2349C /* MainWindow.swift in Sources */,
+				2113AFD31AC793D400C2349C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2113AFD91AC793D400C2349C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2113AFE41AC793D400C2349C /* TPForceTouchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2113AFDF1AC793D400C2349C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2113AFCC1AC793D400C2349C /* TPForceTouch */;
+			targetProxy = 2113AFDE1AC793D400C2349C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2113AFD61AC793D400C2349C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2113AFD71AC793D400C2349C /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2113AFE51AC793D400C2349C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2113AFE61AC793D400C2349C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2113AFE81AC793D400C2349C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TPForceTouch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2113AFE91AC793D400C2349C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TPForceTouch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2113AFEB1AC793D400C2349C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TPForceTouchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TPForceTouch.app/Contents/MacOS/TPForceTouch";
+			};
+			name = Debug;
+		};
+		2113AFEC1AC793D400C2349C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TPForceTouchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TPForceTouch.app/Contents/MacOS/TPForceTouch";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2113AFC81AC793D400C2349C /* Build configuration list for PBXProject "TPForceTouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2113AFE51AC793D400C2349C /* Debug */,
+				2113AFE61AC793D400C2349C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2113AFE71AC793D400C2349C /* Build configuration list for PBXNativeTarget "TPForceTouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2113AFE81AC793D400C2349C /* Debug */,
+				2113AFE91AC793D400C2349C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2113AFEA1AC793D400C2349C /* Build configuration list for PBXNativeTarget "TPForceTouchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2113AFEB1AC793D400C2349C /* Debug */,
+				2113AFEC1AC793D400C2349C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2113AFC51AC793D400C2349C /* Project object */;
+}
