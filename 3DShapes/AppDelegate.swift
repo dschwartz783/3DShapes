@@ -21,26 +21,19 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate, SCNSceneRe
     var indices: [Int] = []
     @IBOutlet weak var mainScene: SCNView!
     
+    func renderer(_ renderer: SCNSceneRenderer, willRenderScene scene: SCNScene, atTime time: TimeInterval) {
+        NSColor.green.set()
+    }
+    
     func drawArt(window: NSView) {
         let numPoints = (self.numPointsField.stringValue as NSString).doubleValue
         if numPoints > 0 {
-            
-            NSColor.green.set()
-            var smallestDimension: CGFloat
-            if (window.frame.height < window.frame.width)
-            {
-                smallestDimension = window.frame.height
-            }
-            else
-            {
-                smallestDimension = window.frame.width
-            }
             
             let r: CGFloat = 1
             
             self.coordinateArray.removeAll()
             
-            for theta: Double in stride(from: 0 as Double, to: M_PI, by: Double(M_PI) / numPoints * 2) {
+            for theta: Double in stride(from: 0 as Double, through: M_PI, by: Double(M_PI) / numPoints * 2) {
                 DispatchQueue.concurrentPerform(iterations: Int(numPoints), execute: { (n: Int) in
                     let phi = M_PI * Double(2) / Double(numPoints) * Double(n)
                     let newVector = SCNVector3Make(r * CGFloat(sin(theta)) * CGFloat(cos(phi)), r * CGFloat(sin(theta)) * CGFloat(sin(phi)), r * CGFloat(cos(theta)))
