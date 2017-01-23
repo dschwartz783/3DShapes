@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7528.3" systemVersion="14D127a" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7528.3"/>
-        <plugIn identifier="com.apple.SceneKitIBPlugin" version="7528.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <plugIn identifier="com.apple.SceneKitIBPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -675,18 +676,18 @@
             <windowCollectionBehavior key="collectionBehavior" fullScreenPrimary="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="446" height="240"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1050"/>
             <value key="minSize" type="size" width="446" height="240"/>
             <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="-5" width="446" height="240"/>
+                <rect key="frame" x="0.0" y="0.0" width="446" height="240"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <sceneView loops="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WXU-wL-JGm">
+                    <sceneView translatesAutoresizingMaskIntoConstraints="NO" id="WXU-wL-JGm">
                         <rect key="frame" x="0.0" y="0.0" width="446" height="190"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </sceneView>
                     <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hC6-ca-WGb">
-                        <rect key="frame" x="71" y="198" width="51" height="22"/>
+                        <rect key="frame" x="70" y="198" width="51" height="22"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="51" id="6vh-ZR-pYG"/>
                         </constraints>
@@ -700,17 +701,17 @@
                         </connections>
                     </textField>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0hW-un-12j">
-                        <rect key="frame" x="124" y="192" width="72" height="32"/>
+                        <rect key="frame" x="123" y="192" width="72" height="32"/>
                         <buttonCell key="cell" type="push" title="Draw" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="8N5-kt-bjO">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="drawPushed:" target="Voe-Tx-rLC" id="Tm6-Jj-SGy"/>
+                            <action selector="drawPushedWithSender:" target="Voe-Tx-rLC" id="9NX-0i-di9"/>
                         </connections>
                     </button>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dbe-XK-8ro">
-                        <rect key="frame" x="18" y="203" width="47" height="17"/>
+                        <rect key="frame" x="18" y="203" width="46" height="17"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Points:" id="gEG-94-IuL">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -719,6 +720,7 @@
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Vf-ha-J4h">
                         <rect key="frame" x="196" y="203" width="185" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Shape can be interacted with" id="Uf3-9w-3Hf">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -748,9 +750,6 @@
                 <behavior key="behavior" lightByBackground="YES" lightByGray="YES" multiLevelAccelerator="YES"/>
                 <font key="font" metaFont="system"/>
             </buttonCell>
-            <connections>
-                <action selector="buttonPressed:" target="Voe-Tx-rLC" id="M55-7A-xTb"/>
-            </connections>
             <point key="canvasLocation" x="428.5" y="316.5"/>
         </button>
         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="K27-Hc-yGo">

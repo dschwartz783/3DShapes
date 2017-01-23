@@ -22,11 +22,9 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate, SCNSceneRe
     @IBOutlet weak var mainScene: SCNView!
     
     func drawArt(window: NSView) {
-        let begin_time = NSDate().timeIntervalSince1970
         let numPoints = (self.numPointsField.stringValue as NSString).doubleValue
         if numPoints > 0 {
-            let mainPath: NSBezierPath = NSBezierPath()
-            mainPath.lineWidth = 0.25
+            
             NSColor.green.set()
             var smallestDimension: CGFloat
             if (window.frame.height < window.frame.width)
@@ -79,18 +77,17 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate, SCNSceneRe
                 })
             })
         }
-        let totalTime = NSDate().timeIntervalSince1970 - begin_time
     }
     
     func lineBetweenNodeA(_ nodeA: SCNNode, nodeB: SCNNode) -> SCNNode
     {
-        let positions: [CGFloat] = [nodeA.position.x, nodeA.position.y, nodeA.position.z, nodeB.position.x, nodeB.position.y, nodeB.position.z]
-        let positionData = NSData(bytes: positions, length: MemoryLayout<CGFloat>.size*positions.count)
+        let positions: [Float] = [Float(nodeA.position.x), Float(nodeA.position.y), Float(nodeA.position.z), Float(nodeB.position.x), Float(nodeB.position.y), Float(nodeB.position.z)]
+        let positionData = Data(bytes: positions, count: MemoryLayout<Float>.size*positions.count * 2)
         let indices: [Int32] = [0, 1]
-        let indexData = NSData(bytes: indices, length: MemoryLayout<Int32>.size * indices.count)
+        let indexData = Data(bytes: indices, count: MemoryLayout<Int32>.size * indices.count * 2)
         
-        let source = SCNGeometrySource(data: positionData as Data, semantic: SCNGeometrySource.Semantic.vertex, vectorCount: indices.count, usesFloatComponents: true, componentsPerVector: 3, bytesPerComponent: MemoryLayout<CGFloat>.size, dataOffset: 0, dataStride: MemoryLayout<CGFloat>.size * 3)
-        let element = SCNGeometryElement(data: indexData as Data, primitiveType: SCNGeometryPrimitiveType.line, primitiveCount: indices.count, bytesPerIndex: MemoryLayout<Int32>.size)
+        let source = SCNGeometrySource(data: positionData, semantic: SCNGeometrySource.Semantic.vertex, vectorCount: indices.count, usesFloatComponents: true, componentsPerVector: 3, bytesPerComponent: MemoryLayout<Float>.size, dataOffset: 0, dataStride: MemoryLayout<Float>.size * 3)
+        let element = SCNGeometryElement(data: indexData, primitiveType: SCNGeometryPrimitiveType.line, primitiveCount: indices.count, bytesPerIndex: MemoryLayout<Int32>.size)
         
         let line = SCNGeometry(sources: [source], elements: [element])
         return SCNNode(geometry: line)
