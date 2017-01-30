@@ -75,9 +75,9 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate, SCNSceneRe
     func lineBetweenNodeA(_ nodeA: SCNNode, nodeB: SCNNode) -> SCNNode
     {
         let positions: [Float] = [Float(nodeA.position.x), Float(nodeA.position.y), Float(nodeA.position.z), Float(nodeB.position.x), Float(nodeB.position.y), Float(nodeB.position.z)]
-        let positionData = Data(bytes: positions, count: MemoryLayout<Float>.size*positions.count * 2)
+        let positionData = Data(bytes: positions, count: MemoryLayout<Float>.size*positions.count)
         let indices: [Int32] = [0, 1]
-        let indexData = Data(bytes: indices, count: MemoryLayout<Int32>.size * indices.count * 2)
+        let indexData = Data(bytes: indices, count: MemoryLayout<Int32>.size * indices.count)
         
         let source = SCNGeometrySource(data: positionData, semantic: SCNGeometrySource.Semantic.vertex, vectorCount: indices.count, usesFloatComponents: true, componentsPerVector: 3, bytesPerComponent: MemoryLayout<Float>.size, dataOffset: 0, dataStride: MemoryLayout<Float>.size * 3)
         let element = SCNGeometryElement(data: indexData, primitiveType: SCNGeometryPrimitiveType.line, primitiveCount: indices.count, bytesPerIndex: MemoryLayout<Int32>.size)

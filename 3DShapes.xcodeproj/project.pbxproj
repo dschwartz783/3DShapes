@@ -32,6 +32,7 @@
 		2113AFDD1AC793D400C2349C /* 3DShapesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 3DShapesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2113AFE21AC793D400C2349C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2113AFE31AC793D400C2349C /* TPForceTouchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TPForceTouchTests.swift; sourceTree = "<group>"; };
+		339FFCE21E3EB2A6009292ED /* 3DShapes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = 3DShapes.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +74,7 @@
 		2113AFCF1AC793D400C2349C /* 3DShapes */ = {
 			isa = PBXGroup;
 			children = (
+				339FFCE21E3EB2A6009292ED /* 3DShapes.entitlements */,
 				2113AFD21AC793D400C2349C /* AppDelegate.swift */,
 				2113AFD41AC793D400C2349C /* Images.xcassets */,
 				2113AFD61AC793D400C2349C /* MainMenu.xib */,
@@ -155,6 +157,13 @@
 				TargetAttributes = {
 					2113AFCC1AC793D400C2349C = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = 56ZE5MZEBQ;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 					2113AFDC1AC793D400C2349C = {
 						CreatedOnToolsVersion = 6.3;
@@ -331,11 +340,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = 3DShapes/3DShapes.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 56ZE5MZEBQ;
 				INFOPLIST_FILE = 3DShapes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "DDS.private.WaffleForce.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "DDS.private.WaffleForce.-DShapes";
 				PRODUCT_NAME = 3DShapes;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -343,11 +357,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = 3DShapes/3DShapes.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 56ZE5MZEBQ;
 				INFOPLIST_FILE = 3DShapes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "DDS.private.WaffleForce.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "DDS.private.WaffleForce.-DShapes";
 				PRODUCT_NAME = 3DShapes;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
