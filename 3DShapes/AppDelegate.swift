@@ -46,7 +46,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate, SCNSceneRe
             
             calcQueue.async(qos: DispatchQoS.userInteractive, flags: DispatchWorkItemFlags.barrier, execute: {
                 
-                let testScene = SCNScene()
+                let mainNode = SCNNode()
                 
                 for coord1 in self.coordinateArray
                 {
@@ -59,14 +59,25 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate, SCNSceneRe
                         junkNode2.position = coord2
                         let newNode = self.lineBetweenNodeA(junkNode1, nodeB: junkNode2)
                         
-                        testScene.rootNode.addChildNode(newNode)
+                        mainNode.addChildNode(newNode)
                         
                     }
                 }
+                
                 DispatchQueue.main.sync(execute: { () -> Void in
+                    
+                    mainNode.childNodes.forEach({ (node) in
+                        let colorMaterial = SCNMaterial()
+                        colorMaterial.diffuse.contents = NSColor.red
+                        
+                        node.geometry!.firstMaterial = colorMaterial
+                    })
+                    
                     self.mainScene.autoenablesDefaultLighting = true
                     self.mainScene.allowsCameraControl = true
-                    self.mainScene.scene = testScene
+                    let resultScene = SCNScene()
+                    resultScene.rootNode.addChildNode(mainNode.flattenedClone())
+                    self.mainScene.scene = resultScene
                 })
             })
         }
