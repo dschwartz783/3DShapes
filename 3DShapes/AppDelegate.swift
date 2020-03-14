@@ -1,4 +1,4 @@
-//
+    //
 //  AppDelegate.swift
 //  3DShapes
 //
@@ -28,71 +28,50 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate, SCNSceneRe
             
             var coordinateArray: [SCNVector3] = []
             
-            stride(from: 0 as Double, through: Double.pi, by: Double.pi / numPoints * 2).forEach({ (theta) in
-                DispatchQueue.concurrentPerform(iterations: Int(numPoints), execute: { (n: Int) in
-                    let phi = Double.pi * Double(2) / numPoints * Double(n)
+            stride(from: 0, through: Double.pi, by: Double.pi / numPoints * 2).forEach({ (theta) in
+                stride(from: 0, through: Double.pi * 2, by: Double.pi / numPoints * 2).forEach({ (phi) in
                     let newVector = SCNVector3Make(r * CGFloat(sin(theta)) * CGFloat(cos(phi)), r * CGFloat(sin(theta)) * CGFloat(sin(phi)), r * CGFloat(cos(theta)))
-                    self.arrayQueue.sync(execute: { () -> Void in
-                        coordinateArray.append(newVector)
-                    })
+                    coordinateArray.append(newVector)
                 })
             })
             
-            calcQueue.async(qos: DispatchQoS.userInteractive, flags: DispatchWorkItemFlags.barrier, execute: {
+            let mainNode = SCNNode()
+            
+            coordinateArray.forEach({ (coord1) in
                 
-                let mainNode = SCNNode()
-                
-                coordinateArray.forEach({ (coord1) in
+                coordinateArray.forEach({ (coord2) in
+                    let newNode = self.line(from: coord1, to: coord2)!
                     
-                    let junkNode1: SCNNode = SCNNode()
-                    junkNode1.position = coord1
-                    
-                    coordinateArray.forEach({ (coord2) in
-                        let junkNode2: SCNNode = SCNNode()
-                        junkNode2.position = coord2
-                        let newNode = self.lineBetweenNodeA(junkNode1, nodeB: junkNode2)
-                        
-                        mainNode.addChildNode(newNode)
-                    })
-                })
-                
-                mainNode.childNodes.forEach({ (node) in
+                    mainNode.addChildNode(newNode)
+
                     let colorMaterial = SCNMaterial()
                     colorMaterial.diffuse.contents = NSColor.yellow
-                    
-                    node.geometry!.firstMaterial = colorMaterial
-                })
-                
-                DispatchQueue.main.sync(execute: { () -> Void in
-                    self.mainScene.autoenablesDefaultLighting = true
-                    self.mainScene.allowsCameraControl = true
-                    let resultScene = SCNScene()
-                    resultScene.rootNode.addChildNode(mainNode.flattenedClone())
-                    self.mainScene.scene = resultScene
+                    newNode.geometry!.firstMaterial = colorMaterial
                 })
             })
+            
+            let resultScene = SCNScene()
+            resultScene.rootNode.addChildNode(mainNode)
+            self.mainScene.scene = resultScene
         }
     }
     
-    func lineBetweenNodeA(_ nodeA: SCNNode, nodeB: SCNNode) -> SCNNode {
-        let positions: [Float] = [Float(nodeA.position.x), Float(nodeA.position.y), Float(nodeA.position.z), Float(nodeB.position.x), Float(nodeB.position.y), Float(nodeB.position.z)]
-        let positionData = Data(bytes: positions, count: MemoryLayout<Float>.size*positions.count)
-        let indices: [Int32] = [0, 1]
-        let indexData = Data(bytes: indices, count: MemoryLayout<Int32>.size * indices.count)
-        
-        let source = SCNGeometrySource(data: positionData, semantic: SCNGeometrySource.Semantic.vertex, vectorCount: indices.count, usesFloatComponents: true, componentsPerVector: 3, bytesPerComponent: MemoryLayout<Float>.size, dataOffset: 0, dataStride: MemoryLayout<Float>.size * 3)
-        let element = SCNGeometryElement(data: indexData, primitiveType: SCNGeometryPrimitiveType.line, primitiveCount: indices.count, bytesPerIndex: MemoryLayout<Int32>.size)
-        
-        let line = SCNGeometry(sources: [source], elements: [element])
-        return SCNNode(geometry: line)
+    func line(from p1: SCNVector3, to p2: SCNVector3) -> SCNNode? {
+        // Draw a line between two points and return it as a node
+        var indices: [Int32] = [0, 1]
+        let positions = [p1, p2]
+        let vertexSource = SCNGeometrySource(vertices: positions)
+        let indexData = Data(bytes: &indices, count:MemoryLayout<Int32>.size * indices.count)
+         let element = SCNGeometryElement(data: indexData, primitiveType: .line, primitiveCount: 1, bytesPerIndex: MemoryLayout<Int32>.size)
+        let line = SCNGeometry(sources: [vertexSource], elements: [element])
+        let lineNode = SCNNode(geometry: line)
+        return lineNode
     }
     
     @IBAction func drawPushed(sender: NSButton) {
-        DispatchQueue.global().async {
-            sender.isEnabled = false
-            self.drawArt(window: self.mainScene)
-            sender.isEnabled = true
-        }
+        sender.isEnabled = false
+        self.drawArt(window: self.mainScene)
+        sender.isEnabled = true
     }
     
     @IBAction func buttonPressed(sender: NSButton) {
